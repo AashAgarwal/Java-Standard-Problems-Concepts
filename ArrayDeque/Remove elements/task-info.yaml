@@ -1,0 +1,15 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: Using the delete() method
+  - text: Using the removeFirst() or removeLast() methods
+  - text: Using the remove(E e) method
+  - text: It's not possible to remove elements from an ArrayDeque
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/35863#comment
+status: Solved
+record: -1
+local_check: false

@@ -1,0 +1,15 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: It counts the number of spaces on the final line before the """
+  - text: It counts the maximum number of spaces all lines have in common
+  - text: It takes the average of the leading whitespace for each line
+  - text: It uses a complex machine learning algorithm
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/17321#comment
+status: Solved
+record: -1
+local_check: false

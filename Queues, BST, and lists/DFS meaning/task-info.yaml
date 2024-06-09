@@ -1,0 +1,15 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: Don't Fight Squirrels
+  - text: Distributed Function System
+  - text: Depth First Search
+  - text: Dynamic File Structure
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/32035#comment
+status: Solved
+record: -1
+local_check: false

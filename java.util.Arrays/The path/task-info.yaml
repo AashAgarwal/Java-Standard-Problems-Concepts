@@ -1,0 +1,15 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: java.Arrays
+  - text: java.lang.Arrays
+  - text: java.util.Arrays
+  - text: java.base.Arrays
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/19366#comment
+status: Solved
+record: -1
+local_check: false

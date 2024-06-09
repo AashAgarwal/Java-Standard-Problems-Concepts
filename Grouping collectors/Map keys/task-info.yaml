@@ -1,0 +1,17 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: String
+  - text: Boolean
+  - text: Integer
+  - text: Any type
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/10513#comment
+status: Solved
+record: -1
+selected_options:
+  - 1
+local_check: false

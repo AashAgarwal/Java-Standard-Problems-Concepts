@@ -1,0 +1,20 @@
+type: matching
+captions:
+  - Merge two binary trees
+  - Merge two sorted lists
+  - Reverse LinkedList
+options:
+  - O(n + m)
+  - O(n)
+  - "O(min(n, m))"
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/32038#comment
+status: Solved
+record: -1
+ordering:
+  - 0
+  - 1
+  - 2

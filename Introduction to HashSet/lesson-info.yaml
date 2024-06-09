@@ -1,0 +1,11 @@
+content:
+  - Theory
+  - Clear all data
+  - The best-case complexity
+  - Null values
+  - HashSet properties
+  - Confirm an element
+  - Using Set.of() with the constructor
+  - Immutable sets
+  - Removing duplicates
+  - Element existence check

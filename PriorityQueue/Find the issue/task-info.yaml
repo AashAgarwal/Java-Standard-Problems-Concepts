@@ -1,0 +1,15 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: The application will throw a ClassCastException
+  - text: The application will print 85
+  - text: The application will print 95
+  - text: The application will throw a NullPointerException
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/20183#comment
+status: Solved
+record: -1
+local_check: false

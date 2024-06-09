@@ -1,0 +1,26 @@
+type: matching
+captions:
+  - rivers.stream().takeWhile(r -&gt; r.getLength() &lt; 6000).count()
+  - rivers.stream().takeWhile(r -&gt; r.getLength() &gt; 6000).count()
+  - rivers.stream().dropWhile(r -&gt; r.getLength() &lt; 6000).count()
+  - rivers.stream().dropWhile(r -&gt; r.getLength() &gt; 6000).count()
+options:
+  - 2
+  - 4
+  - 0
+  - 6
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/12516#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Wed, 29 May 2024 14:34:38 UTC"
+record: -1
+ordering:
+  - 0
+  - 1
+  - 2
+  - 3

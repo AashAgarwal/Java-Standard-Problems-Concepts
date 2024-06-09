@@ -1,0 +1,16 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: order of elements that is same as the order they were inserted
+  - text: sorted order of elements according to the keys
+  - text: 'no order of the elements '
+  - text: sorted order of elements according to the values
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/36548#comment
+status: Solved
+record: -1
+custom_name: Is TreeMap sorted?
+local_check: false

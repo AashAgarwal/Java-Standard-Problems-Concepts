@@ -1,0 +1,15 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: O(n)
+  - text: O(1)
+  - text: O(log n)
+  - text: O(n^2)
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/32037#comment
+status: Solved
+record: -1
+local_check: false

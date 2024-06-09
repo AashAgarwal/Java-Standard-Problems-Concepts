@@ -1,0 +1,123 @@
+<div class="step-text">
+<p>We already have covered what is a <code class="language-java">Map</code> interface and looked at its methods. There are also a number of implementations of <code class="language-java">Map</code> interface. Now it is time to study them!</p>
+<h5 id="linkedhashmap">LinkedHashMap</h5>
+<p>The <code class="language-java">LinkedHashMap</code> stores the order in which elements were inserted.</p>
+<p>Let's see a part of the previous example again:</p>
+<pre><code class="language-java">Map&lt;Integer, String&gt; products = new LinkedHashMap&lt;&gt;(); // ordered map of products
+
+products.put(1000, "Notebook");
+products.put(2000, "Phone");
+products.put(3000, "Keyboard");
+
+System.out.println(products); // it's always ordered {1000=Notebook, 2000=Phone, 3000=Keyboard}</code></pre>
+<p>In this code, the order of pairs is always the same and matches the order in which they are inserted into the map.</p>
+<h5 id="treemap">TreeMap</h5>
+<p>The <code class="language-java">TreeMap</code> class represents a map that gives us guarantees on the order of the elements. It corresponds to the sorting order of the keys determined either by their natural order (if they implement the <code class="language-java">Comparable</code> interface) or by specific <code class="language-java">Comparator</code> implementation.</p>
+<p>This class implements the <code class="language-java">SortedMap</code> interface, which extends the base <code class="language-java">Map</code> interface. It provides some new methods related to comparisons of keys:</p>
+<ul>
+<li>
+<p><code class="language-java">Comparator&lt;? super K&gt; comparator()</code> returns the comparator used to order elements in the map or <code class="language-java">null</code> if the map uses the <a class="theory-lookup not-relevant" href="/learn/step/36545" rel="noopener noreferrer nofollow" target="_blank" title="In Java, natural ordering is the order defined by the compareTo() method of the Comparable interface. | It is used to sort objects of a class that has a natural or inherent order, such as numbers or dates. When a class has an obvious natural ordering, implementing the Comparable interface is a suitable choice. However, if a class has multiple properties and it's not possible to define a natural order for such objects, or if a class doesn't implement the Comparable interface and cannot be modified, then using other methods for comparison may be necessary.">natural ordering</a> of its keys;</p>
+</li>
+<li>
+<p><code class="language-java">E firstKey()</code> returns the first (lowest) key in the map;</p>
+</li>
+<li>
+<p><code class="language-java">E lastKey()</code> returns the last (highest) key in the map;</p>
+</li>
+<li>
+<p><code class="language-java">SortedMap&lt;K, V&gt; headMap(K toKey)</code> returns a submap containing elements whose keys are strictly less than <code class="language-java">toKey</code>;</p>
+</li>
+<li>
+<p><code class="language-java">SortedMap&lt;K, V&gt; tailMap(K fromKey)</code> returns a submap containing elements whose keys are greater than or equal to <code class="language-java">fromKey</code>;</p>
+</li>
+<li>
+<p><code class="language-java">SortedMap&lt;K, V&gt; subMap(K fromKey, K toKey)</code> returns a submap containing elements whose keys are in range <code class="language-java">fromKey</code> (inclusive) <code class="language-java">toKey</code> (exclusive);</p>
+</li>
+</ul>
+<p>The example below demonstrates how to create and use an object of <code class="language-java">TreeMap</code>. This map is filled with events, each of them has a date (key) and title (value).</p>
+<p></p>
+<div class="alert alert-primary">
+<p><code class="language-java">LocalDate</code> is a class that represents a date. The invocation of <code class="language-java">LocalDate.of(year, month, day)</code> method creates the specified date object with the given year, month and day.</p>
+<p></p></div>
+<pre><code class="language-java">SortedMap&lt;LocalDate, String&gt; events = new TreeMap&lt;&gt;();
+
+events.put(LocalDate.of(2017, 6, 6), "The Java Conference");
+events.put(LocalDate.of(2017, 6, 7), "Another Java Conference");
+events.put(LocalDate.of(2017, 6, 8), "Discussion: career or education?");
+events.put(LocalDate.of(2017, 6, 9), "The modern art");
+events.put(LocalDate.of(2017, 6, 10), "Coffee master class");
+
+LocalDate fromInclusive = LocalDate.of(2017, 6, 8);
+LocalDate toExclusive = LocalDate.of(2017, 6, 10);
+
+System.out.println(events.subMap(fromInclusive, toExclusive));</code></pre>
+<p>The code outputs the resulting submap:</p>
+<pre><code class="language-java">{2017-06-08=Discussion: career or education?, 2017-06-09=The modern art}</code></pre>
+<p></p>
+<div class="alert alert-primary">
+<p>Use <code class="language-java">TreeMap</code> only when you really need the sorting order of elements since this implementation is less efficient than <code class="language-java">HashMap</code>.</p>
+<p></p></div>
+<h5 id="iterating-over-maps">Iterating over maps</h5>
+<p>It is impossible to directly iterate over a map since it does not implement the <code class="language-java">Iterable</code> interface. Fortunately, some methods of maps return other collections which are iterable. The order of elements when iterating depends on the concrete implementation of the <code class="language-java">Map</code> interface.</p>
+<p>The following code shows how to get keys and values in a for-each loop:</p>
+<pre><code class="language-java">Map&lt;String, String&gt; friendPhones = Map.of(
+        "Bob", "+1-202-555-0118",
+        "James", "+1-202-555-0220",
+        "Katy", "+1-202-555-0175"
+);
+
+// printing names
+for (String name : friendPhones.keySet()) {
+    System.out.println(name);
+}
+
+// printing phones
+for (String phone : friendPhones.values()) {
+    System.out.println(phone);
+}</code></pre>
+<p>If you want to print a key and its associated value at the same iteration, you can get <code class="language-java">entrySet()</code> and iterate over it.</p>
+<pre><code class="language-java">for (var entry : friendPhones.entrySet()) {
+    System.out.println(entry.getKey() + ": " + entry.getValue());
+}</code></pre>
+<p>This code prints all pairs as we expect:</p>
+<pre><code class="language-java">Bob: +1-202-555-0118
+James: +1-202-555-0220
+Katy: +1-202-555-0175</code></pre>
+<p></p>
+<div class="alert alert-primary">
+<p>We use <code class="language-java">var</code> released in Java 10 to declare the loop's  variable <code class="language-java">entry</code>, but it is not necessary. If you have an older version of Java or just don't want to use <code class="language-java">var</code>, you can write the data type explicitly like <code class="language-java">Map.Entry&lt;String, String&gt;</code>.</p>
+<p></p></div>
+<p>The same behavior can be achieved by using a lambda expression with two arguments if you prefer this way:</p>
+<pre><code class="language-java">friendPhones.forEach((name, phone) -&gt; System.out.println(name + ": " + phone));
+</code></pre>
+<h5 id="other-collections-as-values">Other collections as values</h5>
+<p>It is possible to store other collections as values in maps since collections are objects as well.</p>
+<p>Here is an example with a map of synonyms:</p>
+<pre><code class="language-java">Map&lt;String, Set&lt;String&gt;&gt; synonyms = new HashMap&lt;&gt;();
+
+synonyms.put("Do", Set.of("Execute"));
+synonyms.put("Make", Set.of("Set", "Attach", "Assign"));
+synonyms.put("Keep", Set.of("Hold", "Retain"));
+
+// {Keep=[Hold, Retain], Make=[Attach, Assign, Set], Do=[Execute]}
+System.out.println(synonyms);</code></pre>
+<p>Storing collections as keys of a map, on the other hand, is not a common case, and it has some restrictions. Such keys should be represented by <strong>immutable</strong> collections. We will not consider this case here.</p>
+<h5 id="map-equality">Map equality</h5>
+<p>Two maps are considered equal if they contain the same keys and values. Types of maps are not important.</p>
+<p>So, the following maps are fully equal:</p>
+<pre><code class="language-java">Map&lt;String, Integer&gt; namesToAges1 = Map.of("John", 30, "Alice", 28);
+Map&lt;String, Integer&gt; namesToAges2 = new HashMap&lt;&gt;();
+
+namesToAges2.put("Alice", 28);
+namesToAges2.put("John", 30);
+
+System.out.println(Objects.equals(namesToAges1, namesToAges2)); // true</code></pre>
+<p>But the following two maps are different since the second map does not include "Alice":</p>
+<pre><code class="language-java">Map&lt;String, Integer&gt; namesToAges1 = Map.of("John", 30, "Alice", 28);
+Map&lt;String, Integer&gt; namesToAges2 = Map.of("John", 30);
+
+System.out.println(Objects.equals(namesToAges1, namesToAges2)); // false</code></pre>
+<p>By this, we are finishing our consideration of maps. There was a lot of theory. If there's something you don't understand, try to practice anyway and return to the theory when questions arise.</p>
+<h5 id="conclusion">Conclusion</h5>
+<p>There are many implementations of <code class="language-java">Map</code> inteface in Java, which backed by different principles. <code class="language-java">LinkedHashMap</code> extends <code class="language-java">HashMap</code> functionality by providing ordering. <code class="language-java">TreeMap</code> uses tree as a backed data structure. <code class="language-java">Map</code> is very agile and can store every class as a key or value.</p>
+</div>

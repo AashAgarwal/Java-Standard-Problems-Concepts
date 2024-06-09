@@ -1,0 +1,16 @@
+<div class="step-text">
+<p></p>
+<p>Take the following code:</p>
+<pre><code class="language-java">String nameAnimal = "Pencil";
+String typeAnimal = "Cat";
+
+String firstAnimal = """
+    name: %s
+    type: %s
+    """.formatted(nameAnimal, typeAnimal); 
+
+String secondAnimal = String.format("name: %s\ntype: %s", nameAnimal, typeAnimal);</code></pre>
+<p>In this piece of code:</p>
+<pre><code class="language-java">boolean result = firstAnimal.equals(secondAnimal);</code></pre>
+<p>The <code class="language-java">result</code> is ...</p>
+</div>

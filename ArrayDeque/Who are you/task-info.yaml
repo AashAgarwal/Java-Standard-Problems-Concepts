@@ -1,0 +1,15 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: A type of list that allows random access to elements
+  - text: A resizable-array implementation of the Deque interface
+  - text: A type of array that can only hold integers
+  - text: A data structure that only allows adding elements to the front
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/35859#comment
+status: Solved
+record: -1
+local_check: false

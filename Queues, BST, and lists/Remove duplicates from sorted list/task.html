@@ -1,0 +1,16 @@
+<div class="step-text">
+<p></p>
+<p>Given the <code class="java">head</code> of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list sorted as well.</p>
+<details><summary>The code uses the same node structure described in the theory.</summary>
+<pre><code class="java">class ListNode{
+    int val;
+    public ListNode next;
+    public ListNode(int val){
+        this.val = val;
+    }
+    public boolean hasNext(){
+        return next != null;
+    }
+}</code></pre>
+</details><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">1 1 1 2 3 3 10 14 14 24<br></code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">1 2 3 10 14 24</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 5 seconds</font><br><br>
+</div>

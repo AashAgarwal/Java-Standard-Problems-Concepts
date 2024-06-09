@@ -1,0 +1,15 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: It won't compile
+  - text: It will print "2"
+  - text: It will print "3"
+  - text: It will throw an exception
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/34578#comment
+status: Solved
+record: -1
+local_check: false

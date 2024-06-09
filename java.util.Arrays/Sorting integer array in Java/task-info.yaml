@@ -1,0 +1,16 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: "[2, -5, 4, 0, 1]"
+  - text: An error message
+  - text: "[4, 2, 1, 0, -5]"
+  - text: "[1, 0, -5, 2, 4]"
+  - text: "[-5, 0, 1, 2, 4]"
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/34757#comment
+status: Solved
+record: -1
+local_check: false

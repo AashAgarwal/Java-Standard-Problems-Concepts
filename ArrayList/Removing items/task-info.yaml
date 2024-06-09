@@ -1,0 +1,16 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: "[\"ArrayList\", \"resized\"]"
+  - text: "[\"is\", \"array\"]"
+  - text: "[\"is\", \"a\", \"array\"]"
+  - text: "[\"is\", \"resized\"]"
+  - text: "[\"ArrayList\"]"
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/3485#comment
+status: Solved
+record: -1
+local_check: false

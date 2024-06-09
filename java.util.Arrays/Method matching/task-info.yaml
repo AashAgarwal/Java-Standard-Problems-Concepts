@@ -1,0 +1,23 @@
+type: matching
+captions:
+  - equals()
+  - compare()
+  - copyOf()
+  - copyOfRange()
+options:
+  - copies the array by the specified range
+  - compares arrays lexicographically
+  - copies the array starting from the first element
+  - checks arrays for equality
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/19367#comment
+status: Solved
+record: -1
+ordering:
+  - 0
+  - 1
+  - 2
+  - 3

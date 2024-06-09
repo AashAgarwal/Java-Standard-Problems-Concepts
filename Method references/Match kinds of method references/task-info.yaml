@@ -1,0 +1,23 @@
+type: matching
+captions:
+  - Reference to a constructor
+  - Reference to a static method
+  - Reference to an instance (non-static) method of an existing object
+  - Reference to an instance method of an object of a particular type
+options:
+  - String::new
+  - String::valueOf
+  - String::contains
+  - str::contains
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/3346#comment
+status: Solved
+record: -1
+ordering:
+  - 0
+  - 1
+  - 2
+  - 3

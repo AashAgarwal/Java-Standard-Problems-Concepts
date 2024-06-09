@@ -1,0 +1,19 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: MultiMap
+  - text: Set
+  - text: Container
+  - text: Queue
+  - text: List
+  - text: Stack
+  - text: Collection
+  - text: Deque
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/2785#comment
+status: Solved
+record: -1
+local_check: false

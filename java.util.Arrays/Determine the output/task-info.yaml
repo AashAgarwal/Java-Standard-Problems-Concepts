@@ -1,0 +1,15 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: "[1, 2, 3, 4, 5]"
+  - text: ArrayIndexOutOfBoundsException
+  - text: "[10, 10, 10, 10, 10]"
+  - text: "[1, 10, 10, 10, 10]"
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/21786#comment
+status: Solved
+record: -1
+local_check: false

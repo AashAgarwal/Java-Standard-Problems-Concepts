@@ -1,0 +1,15 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: take no parameters
+  - text: are defined in a generic class
+  - text: override methods of a generic class
+  - text: introduce their own type parameters
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/3439#comment
+status: Solved
+record: -1
+local_check: false

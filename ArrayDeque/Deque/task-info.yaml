@@ -1,0 +1,15 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: Data Element Queue
+  - text: Double Element Queue
+  - text: Data Ended Queue
+  - text: Double Ended Queue
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/35860#comment
+status: Solved
+record: -1
+local_check: false

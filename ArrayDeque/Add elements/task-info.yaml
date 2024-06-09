@@ -1,0 +1,15 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: enqueue(E e) and dequeue(E e)
+  - text: push(E e) and pop(E e)
+  - text: add(E e) and remove(E e)
+  - text: addFirst(E e) and addLast(E e)
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/35861#comment
+status: Solved
+record: -1
+local_check: false

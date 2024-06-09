@@ -1,0 +1,22 @@
+<div class="step-text">
+<p></p>
+<p>You are keeping the scores for a baseball game with strange rules. At the beginning of the game, you start with an empty record.</p>
+<p>You are given a list of strings <code class="java">operations</code>, where <code class="java">operations[i]</code> is the <code class="java">i<sup>th</sup></code> operation you must apply to the record and it's one of the following:</p>
+<ul>
+<li>An integer <code class="java">x</code>: record a new score of <code class="java">x</code>.</li>
+<li><code class="java">'+'</code>: record a new score that is the sum of the previous two scores.</li>
+<li><code class="java">'D'</code>: record a new score that is double the previous score.</li>
+<li><code class="java">'C'</code>: invalidate the previous score, removing it from the record.</li>
+</ul>
+<p>Print the sum of all the scores on the record after applying all the operations.</p>
+<p>Example:</p>
+<pre><strong>Input:</strong> ops = ["5","2","C","D","+"]
+<strong>Output:</strong> 30
+<strong>Explanation:</strong>
+"5" - Add 5 to the record, record is now [5].
+"2" - Add 2 to the record, record is now [5, 2].
+"C" - Invalidate and remove the previous score, record is now [5].
+"D" - Add 2 * 5 = 10 to the record, record is now [5, 10].
+"+" - Add 5 + 10 = 15 to the record, record is now [5, 10, 15].
+The total sum is 5 + 10 + 15 = 30.</pre><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">5 2 C D +</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">30</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 5 seconds</font><br><br>
+</div>

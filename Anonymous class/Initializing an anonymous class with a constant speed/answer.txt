@@ -1,0 +1,3 @@
+new Animal() {
+final int SPEED = 25;
+}
