@@ -1,7 +1,14 @@
 content:
-- Theory
-- Incorrect class hierarchies
-- The lost modifier
-- Inheriting members
-- Find the same hierarchy
-- Classes for Hospital
+  - Theory
+  - Shape inheritance and area calculation
+  - calculating triangle perimeter
+  - Multiple names of superclasses and subclasses
+  - Access members inside child classes
+  - Forbid extending
+  - Incorrect class hierarchies
+  - Find the same hierarchy
+  - Inheriting members
+  - Pet inheritance
+  - The lost modifier
+  - A keyword for inheritance
+  - Classes for Hospital

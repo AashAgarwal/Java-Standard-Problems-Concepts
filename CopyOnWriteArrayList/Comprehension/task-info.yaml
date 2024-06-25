@@ -1,0 +1,17 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: 'A technique that allows to make <code>write</code> operations faster. '
+  - text: A cool feature that allows copying and writing at the same time.
+  - text: A technique that allows thread-safety and uses the <code>synchronized</code>
+      keyword.
+  - text: A technique that allows thread-safety by using locks and copying of the original
+      data.
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/20771#comment
+status: Solved
+record: -1
+local_check: false

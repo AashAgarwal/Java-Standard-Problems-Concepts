@@ -1,0 +1,10 @@
+<div class="step-text">
+<p></p>
+<p>As you know, the <code class="java">java.util</code> package includes a standard <code class="java">Iterator&lt;E&gt;</code> interface which has two abstract methods: <code class="java">boolean hasNext()</code> and <code class="java">E next()</code>, as well as two default methods: <code class="java">void remove()</code> and <code class="java">void forEachRemaining(Consumer&lt;? super E&gt; action)</code>. Your task is to create an iterator implementing the <code class="java">Iterator&lt;E&gt;</code> interface for the <code class="java">HyperList</code> class. You must implement both abstract methods and override the <code class="java">void remove()</code> method so that it will remove the element returned by the <code class="java">next()</code> method.</p>
+<p>Your implementation must comply with the following contract:</p>
+<ul>
+<li><code class="java">hasNext()</code> must return true only if there are more elements to iterate.</li>
+<li><code class="java">next()</code> must throw <code class="java">NoSuchElementException</code> if the iteration has no more elements.</li>
+<li><code class="java">remove()</code> must throw <code class="java">IllegalStateException</code> if the next method has not been called yet.</li>
+</ul><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 5 seconds</font><br><br>
+</div>

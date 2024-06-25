@@ -1,0 +1,15 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: It transforms arrays to lists and vice versa.
+  - text: It sequentially accesses elements in a collection.
+  - text: It exposes the underlying data structure.
+  - text: It speeds up iteration over data collections.
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/18025#comment
+status: Solved
+record: -1
+local_check: false

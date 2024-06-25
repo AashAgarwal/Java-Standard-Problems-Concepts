@@ -1,0 +1,16 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: Limiting the number of collection types used to store data.
+  - text: Decoupling the client code from implementation details of concrete collections.
+  - text: Enforcing the single responsibility principle and moving collection traversal
+      logic to a separate class.
+  - text: Providing a uniform interface to iterate over collections.
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/18022#comment
+status: Solved
+record: -1
+local_check: false
